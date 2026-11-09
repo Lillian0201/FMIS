@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DL Finance – Coconut Oil FMIS</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="logo"><span class="mark"></span>DL Finance</div>
+    <nav id="nav"></nav>
+    <label class="role">Signed in as
+      <select id="role">
+        <option>Financial Analyst</option><option>Finance Manager</option><option>Director</option><option>CEO</option><option>Treasury</option><option>Viewer</option>
+      </select>
+    </label>
+    <button class="ghost reset" id="reset">Reset demo data</button>
+  </aside>
+  <main>
+    <div class="top">
+      <span id="crumb"></span>
+      <span class="tools">
+        <select id="range" aria-label="Date filter"><option value="3">Last 3 months</option><option value="6">Last 6 months</option><option value="12">Last 12 months</option></select>
+        <button class="ghost" id="exp">Export CSV</button>
+      </span>
+    </div>
+    <div id="view"></div>
+  </main>
+</div>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
